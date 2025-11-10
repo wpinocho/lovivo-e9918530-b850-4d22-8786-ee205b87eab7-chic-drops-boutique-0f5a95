@@ -1,11 +1,10 @@
-import { ProductCardUI } from "@/components/ui/ProductCardUI"
+import { EditorialProductCardUI } from "@/components/ui/EditorialProductCard"
 import type { Product } from "@/lib/supabase"
 
 /**
  * ROUTE COMPONENT - ProductCard
  * 
- * Este componente solo importa y usa ProductCardUI.
- * Toda la lógica está en HeadlessProductCard y la presentación en ProductCardUI.
+ * Uses editorial-chic product card design
  */
 
 interface ProductCardProps {
@@ -13,5 +12,5 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ product }: ProductCardProps) => {
-  return <ProductCardUI product={product} />
+  return <EditorialProductCardUI product={product} />
 }
